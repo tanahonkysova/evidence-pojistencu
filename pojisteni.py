@@ -72,37 +72,7 @@ def vyhledat_pojisteneho():
             break
 
     if not nalezeno:
-        print('Pojištěný nebyl nalezen v evidenci.')
+        print('Pojištěný nebyl nalezen v evidenci')
 
 
-def upravit_pojisteneho(jmeno, prijmeni):
-    for p in pojisteni:
-        if p.jmeno == jmeno and p.prijmeni == prijmeni:
-            nove_jmeno = input('Zadejte nové jméno: ')
-            nove_prijmeni = input('Zadejte nové příjmení: ')
-            nove_telefonni_cislo = input('Zadejte nové telefonní číslo: ')
-            nove_vek = input('Zadejte nový věk: ')
-
-            p.jmeno = nove_jmeno
-            p.prijmeni = nove_prijmeni
-            p.telefonni_cislo = nove_telefonni_cislo
-            p.vek = nove_vek
-
-            print('Data byla aktualizována. Pokračujte libovolnou klávesou....')
-            input()
-            return
-
-    print('Pojištěný nebyl nalezen. Pokračujte libovolnou klávesou....')
-    input()
-
-def odstranit_pojisteneho(jmeno, prijmeni):
-    for i in range(len(pojisteni)):
-        if pojisteni[i].jmeno == jmeno and pojisteni[i].prijmeni == prijmeni:
-            del pojisteni[i]
-
-            print('Pojištěný byl odstraněn. Pokračujte libovolnou klávesou....')
-            input()
-            return
-
-    print('Pojištěný nebyl nalezen. Pokračujte libovolnou klávesou....')
     input()
