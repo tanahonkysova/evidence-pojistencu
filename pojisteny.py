@@ -7,4 +7,4 @@ class Pojisteny:
         self.vek = vek
 
     def __str__(self):
-        return f"{self.jmeno} | {self.prijmeni} | {self.vek} | {self.telefonni_cislo}"
+        return f"{self.jmeno}  {self.prijmeni}   {self.vek}   {self.telefonni_cislo}"
